@@ -31,8 +31,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t unstoppablespark/bf-devops-demo:latest .
+        run: docker build -t kumar2ananth/bf-devops-demo:latest .
 
       - name: Push Docker Image
-        run: docker build -t kumar2ananth/bf-devops-demo:latest .
-	run: docker push kumar2ananth/bf-devops-demo:latest.
+        run: docker push kumar2ananth/bf-devops-demo:latest
